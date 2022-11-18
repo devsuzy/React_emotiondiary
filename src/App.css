@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&display=swap');
+
+body {
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Gaegu', cursive;
+}
+@media (min-width: 650px) {
+  .App {
+    width: 640px;
+  }
+}
+@media (max-width: 650px) {
+  .App {
+    width: 90vw;
+    min-height: 100vh;
+  }
+  #root {
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 0 20px;
+  }
+}
+
+/* Buttons */
+
+.Buttons {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  white-space: nowrap;
+  font-family: 'Gaegu', cursive;
+  color: #fff;
+}
+
+.Buttons_default {
+  background-color: #5dade2;
+}
+.Buttons_positive {
+  background-color: #58d68d;
+}
+.Buttons_negative {
+  background-color: #ec7063;
+}
+
+/* Header */
+
+header {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e2e2e2;
+}
+header > div {
+  display: flex;
+}
+
+header .head_text {
+  width: 50%;
+  font-size: 26px;
+  justify-content: center;
+}
+header .head_btn_left {
+  justify-content: start;
+  width: 25%;
+}
+header .head_btn_right {
+  justify-content: end;
+  width: 25%;
+}
+header button {
+  font-family: 'Gaegu', cursive;
+}
